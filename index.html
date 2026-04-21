@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enxoval da casa</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h1>Lista de compras da casa
+    </h1>
+        <h3><p id="msg">Hora de selecionar nossos moveis</p></h3>
+
+        <ul>
+         <li>
+
+        <input type="checkbox" id="panela">
+  <label for="panela">Jogo de panela</label>
+  
+  <div style="margin-left: 15px;">
+    
+    <a href="https://br.shp.ee/Y3ucWunT" target="_blank">
+      <img src="imagens/images/panela.jpg" width="150">
+    </a>
+
+  </div>
+</li>
+            <li>
+                <input type="checkbox"
+            >Feijão</li>
+
+            <li>
+                <input type="checkbox"
+            >Leite</li>
+
+            <li>
+                <input type="checkbox"
+                >Pão</li>
+
+            <li>
+                <input type="checkbox"
+                >Legumes</li>
+
+            <li>
+                <input type="checkbox"
+                >Banana</li>
+            <li>
+                <input type="checkbox"
+                >Carnes</li>
+            <li>
+                <input type="checkbox"
+                >Maionese</li>
+
+            <li>
+                <input type="checkbox"
+                >Batata frita</li>
+
+            <li>
+                <input type="checkbox"
+                >Whey protein</li>    
+
+            <li>
+                <input type="checkbox"
+                >Bebidas no geral</li>
+
+            <li>
+                <input type="checkbox"
+                >Queijo</li>
+            <li>
+                <input type="checkbox"
+                >Presunto</li>
+    
+            <h3> Se algum item estiver faltando me avise, esses foi o que eu me recordo
+                de comer quase todo dia na sua casa, rs. </h3>
+        </ul>
+
+
+
+
+ <button class="botao" id="abrir">Finalizado</button>
+
+  <div class="modal" id="modal">
+    <div class="caixa-mensagem">
+      <h2>Finalmente!</h2>
+      <p>Que gratificante essa sensação, de tudo comprado pra nossa casa meu amor.
+        Tenho a honra de dizer, conseguimos! Eu te amo demais. ★
+      </p>
+      <button class="fechar" id="fechar">Fechar</button>
+    </div>
+  </div>
+
+
+<script>
+    const botao = document.getElementById('abrir');
+    const modal = document.getElementById('modal');
+    const fechar = document.getElementById('fechar');
+
+ // Abrir modal
+    botao.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    // Fechar modal
+    fechar.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    // Fechar ao clicar fora da caixa
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+
+
+      </body>
+     </html>           
